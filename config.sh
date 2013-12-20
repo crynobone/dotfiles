@@ -1,3 +1,6 @@
+# Having issue with max open files (when running PHPUnit), increase the limit.
+ulimit -n 2048
+
 # Should always give priority to homebrew.
 PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
