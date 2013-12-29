@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
+Bundle 'chriskempson/base16-vim'
 
 set shell=/bin/bash
 
@@ -16,7 +17,9 @@ filetype plugin indent on       " Required
 " Colors
 set t_Co=256
 syntax on
-colorscheme molokai             " xoria256 candystripe molokai solarized
+set background=dark
+colorscheme base16-monokai      " xoria256 candystripe molokai solarized
+let base16colorspace=256
 set guifont=menlo\ for\ powerline:h17
 
 set guioptions-=T               " Removes top toolbar
