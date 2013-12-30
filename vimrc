@@ -18,8 +18,7 @@ filetype plugin indent on       " Required
 set t_Co=256
 syntax on
 set background=dark
-colorscheme base16-monokai      " xoria256 candystripe molokai solarized
-let base16colorspace=256
+colorscheme base16-default      " xoria256 candystripe molokai solarized
 set guifont=menlo\ for\ powerline:h17
 
 set guioptions-=T               " Removes top toolbar
