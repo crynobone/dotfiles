@@ -7,6 +7,11 @@ alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx start
 alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
 alias nginx-restart="nginx-stop && nginx-start"
 
+# PHP alias
+alias php-start="sudo launchctl load ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist"
+alias php-stop="sudo launchctl unload ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist"
+alias php-restart="php-stop && php-start"
+
 # Composer
 alias cidd="composer install --dev --prefer-dist"
 alias cudd="composer update --dev --prefer-dist"
