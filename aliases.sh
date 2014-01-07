@@ -44,6 +44,7 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 
 # be nice
 alias please="sudo"
+alias godmode="su - root"
 
 # `cat` with beautiful colors. requires Pygments installed.
 # sudo easy_install Pygments
