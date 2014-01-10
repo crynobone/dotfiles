@@ -9,6 +9,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'chriskempson/base16-vim'
+Bundle 'johnhamelink/blade.vim'
 
 set shell=/bin/bash
 
