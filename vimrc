@@ -10,10 +10,15 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'chriskempson/base16-vim'
 Bundle 'johnhamelink/blade.vim'
+Bundle 'plasticboy/vim-markdown'
 
 set shell=/bin/bash
 
 filetype plugin indent on       " Required
+
+" Remove folding of markdown
+" as per https://github.com/plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled=1
 
 " Colors
 set t_Co=256
