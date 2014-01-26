@@ -51,4 +51,4 @@ alias godmode="su - root"
 # sudo easy_install Pygments
 alias see='pygmentize -O style=monokai -f console256 -g'
 
-alias flush="dscacheutil -flushcache"
+alias flushdns="dscacheutil -flushcache"
