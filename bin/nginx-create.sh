@@ -6,8 +6,7 @@ NAME=$1
 DIR=`pwd`
 if [ -f $DIR/public/index.php ]; then
     DIR=$DIR/public
-fi
-if [ -f $DIR/public_html/index.php ]; then
+elif [ -f $DIR/public_html/index.php ]; then
     DIR=$DIR/public_html
 fi
 
