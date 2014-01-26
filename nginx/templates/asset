@@ -1,0 +1,12 @@
+# Added cache headers for images, quick fix for cloudfront.
+location ~* \.(png|jpg|jpeg|gif)$ {
+    expires 30d;
+    log_not_found off;
+}
+
+# Only 3 hours on CSS/JS to allow me to roll out fixes during
+# early weeks.
+location ~* \.(js|css|ico)$ {
+    expires 3h;
+    log_not_found off;
+}
