@@ -1,0 +1,16 @@
+server {
+    listen          80;
+    server_name     {name}.dev;
+    root            {path};
+    index           index.php;
+    rewrite_log     on;
+
+    # Heres my redirect, try normal URI and then our Laravel urls.
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    include  /usr/local/etc/nginx/templates/asset;
+    include  /usr/local/etc/nginx/templates/log;
+    include  /usr/local/etc/nginx/templates/php-fpm;
+}

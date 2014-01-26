@@ -6,6 +6,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
 alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
 alias nginx-restart="nginx-stop && nginx-start"
+alias nginx-create="$DOTFILES/bin/nginx-create.sh"
 
 # PHP alias
 alias php-start="sudo launchctl load ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist"
