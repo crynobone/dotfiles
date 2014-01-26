@@ -135,11 +135,7 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " Auto-remove trailing spaces
 autocmd BufWritePre *.php :%s/\s\+$//e
 
-" Edit todo list for project
-nmap ,todo :e todo.txt<cr>
-
 " CtrlP Stuff
-
 " Familiar commands for file/symbol browsing
 map <D-p> :CtrlP<cr>
 map <C-r> :CtrlPBufTag<cr>
