@@ -50,7 +50,7 @@ set smartcase                   " ignore case if search pattern is all lowercase
 set timeout timeoutlen=200 ttimeoutlen=100
 set visualbell                  " don't beep
 set noerrorbells                " don't beep
-set autowrite                   "Save on buffer switch
+set autowrite                   " Save on buffer switch
 set mouse=a
 
 " With a map leader it's possible to do extra key combinations
@@ -65,13 +65,13 @@ nmap <leader>w :w!<cr>
 nnoremap j gj
 nnoremap k gk
 
-"Easy escaping to normal model
+" Easy escaping to normal model
 imap jj <esc>
 
-"Auto change directory to match current file ,cd
+" Auto change directory to match current file ,cd
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
-"easier window navigation
+" Easier window navigation
 
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
