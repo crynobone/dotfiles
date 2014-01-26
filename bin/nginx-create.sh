@@ -1,4 +1,5 @@
 #!/bin/zsh
+
 NAME=$1
 
 # Get target project path
