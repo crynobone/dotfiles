@@ -1,5 +1,4 @@
 #!/bin/zsh
-export PATH=/bin:/usr/bin:/usr/local/bin:$PATH
 NAME=$1
 
 # Get target project path

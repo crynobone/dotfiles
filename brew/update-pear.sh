@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # A basic bash script to setup phpunit after upgrading PHP.
 sudo pear config-set auto_discover 1
 sudo pear channel-discover pear.phpdoc.org
