@@ -11,4 +11,4 @@ PATH=$PATH:/usr/local/share/npm/bin
 PATH=$PATH:$(brew --prefix josegonzalez/php/php54)/bin
 
 # RVM and Ruby
-PATH=$PATH:$HOME/.rvm/bin:$HOME/.rvm/gems/ruby-1.9.3-p448/bin 
+PATH=$PATH:$HOME/.rvm/bin:$HOME/.rvm/gems/ruby-1.9.3-p448/bin

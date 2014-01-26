@@ -43,7 +43,7 @@ alias mailcatch="mailcatcher && sudo postfix start"
 alias hipchat-please="sudo /Applications/HipChat.app/Contents/MacOS/HipChat > /dev/null 2>&1"
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
-# be nice
+# Be nice
 alias please="sudo"
 alias godmode="su - root"
 
