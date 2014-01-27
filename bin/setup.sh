@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 # Setup vimrc
-echo "source ~/.dotfiles/vimrc" > $HOME/.vimrc
+echo "source ~/.dotfiles/vim/vimrc" > $HOME/.vimrc
