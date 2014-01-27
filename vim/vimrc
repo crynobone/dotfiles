@@ -9,8 +9,11 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'chriskempson/base16-vim'
+Bundle 'joshtronic/php.vim'
 Bundle 'johnhamelink/blade.vim'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'pangloss/vim-javascript.git'
+Bundle 'nginx.vim'
 
 set shell=/bin/bash
 
