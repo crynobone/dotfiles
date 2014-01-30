@@ -23,6 +23,7 @@ alias cuddt="cudd && t"
 alias gfa="git fetch --all"
 alias gsfr="git submodule foreach git reset --hard HEAD"
 alias gsfp="git submodule foreach git pull --rebase"
+#alias gcontrib="git log --pretty=format:%an > | awk '{ ++c[$0]; } END { for(cc in c) printf "%5d %s\n",c[cc],cc; }' pipe> | sort -r"
 
 # Laravel and Orchestra Platform
 alias craft="composer create-project laravel/laravel"
