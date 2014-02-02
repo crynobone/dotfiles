@@ -14,6 +14,11 @@ alias php-start="sudo launchctl load ~/Library/LaunchAgents/homebrew-php.josegon
 alias php-stop="sudo launchctl unload ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist"
 alias php-restart="php-stop && php-start"
 
+# MySQL alias
+alias mysql-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql-restart="mysql-stop && mysql-start"
+
 # Composer
 alias cidd="composer install --dev --prefer-dist"
 alias cudd="composer update --dev --prefer-dist"
