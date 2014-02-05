@@ -12,3 +12,7 @@ gem install watson-ruby
 # Setup basic Node.js
 npm install -g less
 npm install -g gulp
+
+# Setup phar
+curl -sS http://gushphp.org/installer | php
+mv gush.phar /usr/local/bin/gush
