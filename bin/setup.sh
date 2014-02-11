@@ -1,23 +1,14 @@
 #!/bin/zsh
 
 # Setup vimrc
+echo "Setup .vimrc"
 echo "source ~/.dotfiles/vim/vimrc" > $HOME/.vimrc
 
-# Setup basic Gem
-gem install guard
-gem install guard-phpunit2
-gem install mailcatcher
-gem install watson-ruby
+echo "Setup Ruby"
+sh setup-ruby.sh
 
-# Setup basic Node.js
-npm install -g less
-npm install -g gulp
+echo "Setup Node.js"
+sh setup-node.sh
 
-# Setup phar
-curl -sS http://gushphp.org/installer | php
-chmod +x gush.phar
-mv gush.phar /usr/local/bin/gush
-
-wget http://codeception.com/codecept.phar
-chmod +x codecept.phar
-mv codecept.phar /usr/local/bin/codecept
+echo "Setup PHP"
+sh setup-php.sh
