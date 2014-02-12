@@ -17,3 +17,8 @@ mv codecept.phar /usr/local/bin/codecept
 wget http://laravel.com/laravel.phar
 chmod +x laravel.phar
 mv laravel.phar /usr/local/bin/laravel
+
+# Setup Envoy
+wget https://github.com/laravel/envoy/raw/master/envoy.phar
+chmod +x envoy.phar
+mv envoy.phar /usr/local/bin/envoy
