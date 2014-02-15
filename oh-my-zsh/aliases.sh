@@ -10,8 +10,8 @@ alias nginx-create="$DOTFILES/bin/nginx-create.sh"
 alias nginx-site="vim /usr/local/etc/nginx/sites-available"
 
 # PHP alias
-alias php-start="sudo launchctl load ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist"
-alias php-stop="sudo launchctl unload ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist"
+alias php-start="launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist"
+alias php-stop="launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist"
 alias php-restart="php-stop && php-start"
 
 # MySQL alias
