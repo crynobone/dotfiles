@@ -37,8 +37,8 @@ alias artisan="php artisan"
 alias art="php artisan"
 
 # Unit testing
-alias cc="codecept"
-alias ct="codecept run"
+alias cc="./vendor/bin/codecept"
+alias ct="./vendor/bin/codecept run"
 alias t="phpunit"
 alias tc="phpunit --coverage-text"
 alias tch="phpunit --coverage-html"
