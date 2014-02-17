@@ -3,21 +3,21 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Nginx alias
-alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
-alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
-alias nginx-restart="nginx-stop && nginx-start"
+# alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
+# alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
+# alias nginx-restart="nginx-stop && nginx-start"
 alias nginx-create="$DOTFILES/bin/nginx-create.sh"
 alias nginx-site="vim /usr/local/etc/nginx/sites-available"
 
 # PHP alias
-alias php-start="launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist"
-alias php-stop="launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist"
-alias php-restart="php-stop && php-start"
+# alias php-start="launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist"
+# alias php-stop="launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist"
+# alias php-restart="php-stop && php-start"
 
 # MySQL alias
-alias mysql-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-alias mysql-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
-alias mysql-restart="mysql-stop && mysql-start"
+# alias mysql-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+# alias mysql-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+# alias mysql-restart="mysql-stop && mysql-start"
 
 # Composer
 alias cidd="composer install --dev --prefer-dist"
