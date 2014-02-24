@@ -12,3 +12,6 @@ sh setup-node.sh
 
 echo "Setup PHP"
 sh setup-php.sh
+
+echo "Setup Composer"
+sh setup-composer.sh

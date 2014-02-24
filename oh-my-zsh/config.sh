@@ -11,6 +11,9 @@ PATH=/usr/local/sbin:/usr/local/bin:$PATH
 # NPM
 PATH=$PATH:/usr/local/share/npm/bin
 
+# Composer
+PATH=$PATH:$HOME/.composer/vendor/bin
+
 # PHP (managed via homebrew)
 PATH=$PATH:$(brew --prefix josegonzalez/php/php55)/bin
 
