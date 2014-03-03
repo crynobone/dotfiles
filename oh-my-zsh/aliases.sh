@@ -3,9 +3,9 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Nginx alias
-# alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
-# alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
-# alias nginx-restart="nginx-stop && nginx-start"
+alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
+alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
+alias nginx-restart="nginx-stop && nginx-start"
 alias nginx-create="$DOTFILES/bin/nginx-create.sh"
 alias nginx-site="vim /usr/local/etc/nginx/sites-available"
 
