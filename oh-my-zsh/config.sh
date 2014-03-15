@@ -18,5 +18,5 @@ PATH=$PATH:$HOME/.composer/vendor/bin
 PATH=$PATH:$(brew --prefix josegonzalez/php/php55)/bin
 
 # RVM and Ruby
-PATH=$PATH:$HOME/.rvm/bin:$HOME/.rvm/gems/ruby-1.9.3-p448/bin
+PATH=$PATH:$HOME/.rvm/bin:$GEM_HOME/bin
 
