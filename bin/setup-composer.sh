@@ -1,2 +1,3 @@
-composer global require codeception/codeception=dev-master --prefer-dist
-composer global require gushphp/gush=~1@stable --prefer-dist
+cp stub/composer.* ~/.composer/
+cd ~/.composer
+composer install --prefer-dist --dev -vvv
