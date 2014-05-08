@@ -5,6 +5,9 @@ ulimit -n 2048
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
+# Export editor
+export EDITOR="vim"
+
 # Should always give priority to homebrew.
 PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
