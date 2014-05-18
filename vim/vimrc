@@ -7,7 +7,7 @@ call vundle#rc()
 " Vundle and generic utilities
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'Shougo/unite.vim'
+" Bundle 'Shougo/unite.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
 
