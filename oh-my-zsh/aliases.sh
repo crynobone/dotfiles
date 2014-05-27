@@ -2,6 +2,9 @@
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
+# Vagrant
+alias vm="ssh vagrant@127.0.0.1 -p 2222"
+
 # Nginx alias
 alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
 alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
