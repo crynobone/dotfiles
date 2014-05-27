@@ -1,6 +1,5 @@
 {
     "require": {
-        "codeception/codeception": "dev-master",
         "gushphp/gush": "~1@stable",
         "pdepend/pdepend": "~1",
         "phpmd/phpmd": "~1",
