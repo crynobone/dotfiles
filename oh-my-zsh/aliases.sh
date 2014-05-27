@@ -46,6 +46,8 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias please="sudo"
 alias kaiju="su - root"
 
+alias hulksmash="rm -Rf" 
+
 # `cat` with beautiful colors. requires Pygments installed.
 # sudo easy_install Pygments
 alias see='pygmentize -O style=monokai -f console256 -g'
