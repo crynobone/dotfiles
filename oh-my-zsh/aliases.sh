@@ -20,6 +20,7 @@ alias ciddt="cidd && t"
 alias cuddt="cudd && t"
 
 # Git
+alias gvn="git svn"
 alias gfa="git fetch --all"
 alias gsfr="git submodule foreach git reset --hard HEAD"
 alias gsfp="git submodule foreach git pull --rebase"
