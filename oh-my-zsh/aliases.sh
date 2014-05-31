@@ -1,4 +1,4 @@
-# Example aliases
+# Oh-My-Zsh aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
@@ -32,10 +32,12 @@ alias orchestra="composer create-project orchestra/platform"
 alias artisan="php artisan"
 alias art="php artisan"
 
-# Unit testing
+# Codeception
 alias codecept="./vendor/bin/codecept"
 alias cc="./vendor/bin/codecept"
 alias ct="./vendor/bin/codecept run"
+
+# PHPUnit
 alias t="phpunit"
 alias tc="phpunit --coverage-text"
 alias tch="phpunit --coverage-html"
@@ -51,10 +53,11 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias please="sudo"
 alias kaiju="su - root"
 
-alias hulksmash="rm -Rf" 
+# Be angry
+alias hulksmash="rm -Rf"
 
 # `cat` with beautiful colors. requires Pygments installed.
-# sudo easy_install Pygments
 alias see='pygmentize -O style=monokai -f console256 -g'
 
+# Flush DNS
 alias flushdns="dscacheutil -flushcache"

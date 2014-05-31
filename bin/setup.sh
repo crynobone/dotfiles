@@ -15,3 +15,5 @@ sh ./setup/php.sh
 
 echo "Setup Composer"
 sh ./setup/composer.sh
+
+sudo easy_install Pygments
