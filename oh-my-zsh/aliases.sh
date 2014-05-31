@@ -33,6 +33,7 @@ alias artisan="php artisan"
 alias art="php artisan"
 
 # Unit testing
+alias codecept="./vendor/bin/codecept"
 alias cc="./vendor/bin/codecept"
 alias ct="./vendor/bin/codecept run"
 alias t="phpunit"
