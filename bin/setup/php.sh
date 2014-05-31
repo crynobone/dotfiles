@@ -1,4 +1,4 @@
-#/bin/zsh
+#!/bin/zsh
 
 # Setup Composer
 curl -sS https://getcomposer.org/installer | php

@@ -1,4 +1,4 @@
-#/bin/zsh
+#!/bin/zsh
 
 brew update
 composer self-update

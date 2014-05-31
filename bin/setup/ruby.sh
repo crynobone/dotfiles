@@ -1,4 +1,4 @@
-#/bin/zsh
+#!/bin/zsh
 
 # Setup basic Gem
 gem install guard

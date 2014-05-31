@@ -1,4 +1,4 @@
-#/bin/zsh
+#!/bin/zsh
 
 NAME=$1
 
@@ -11,4 +11,3 @@ fi
 if [ -f $DIR/sites-available/$NAME.dev.conf ]; then
     rm $DIR/sites-available/$NAME.dev.conf
 fi
-
