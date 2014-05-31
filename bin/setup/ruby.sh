@@ -1,3 +1,5 @@
+#/bin/zsh
+
 # Setup basic Gem
 gem install guard
 gem install guard-phpunit2
