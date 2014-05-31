@@ -61,3 +61,6 @@ alias see='pygmentize -O style=monokai -f console256 -g'
 
 # Flush DNS
 alias flushdns="dscacheutil -flushcache"
+
+# Get Line of Code
+alias cloc="$DOTFILES/bin/loc.sh"
