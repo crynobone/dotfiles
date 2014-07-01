@@ -33,7 +33,7 @@ alias artisan="php artisan"
 alias art="php artisan"
 
 # Codeception
-alias codecept="./vendor/bin/codecept"
+# alias codecept="./vendor/bin/codecept"
 alias cc="./vendor/bin/codecept"
 alias ct="./vendor/bin/codecept run"
 
