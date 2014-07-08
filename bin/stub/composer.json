@@ -1,6 +1,5 @@
 {
     "require": {
-        "gushphp/gush": "~1@stable",
         "pdepend/pdepend": "~1",
         "phpmd/phpmd": "~1",
         "covex-nn/phpcb": "~1",
