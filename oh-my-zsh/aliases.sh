@@ -1,7 +1,7 @@
 # Oh-My-Zsh aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-
+alias env-update="sh ~/.dotfiles/bin/update.sh"
 # Vagrant
 alias vm="ssh vagrant@127.0.0.1 -p 2222"
 
