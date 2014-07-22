@@ -8,6 +8,8 @@
         "phploc/phploc": "~2",
         "phpunit/phpunit": "~4",
         "phpdocumentor/phpdocumentor": "~2",
-        "laravel/envoy": "~1.0"
+        "laravel/envoy": "~1.0",
+        "codeception/codeception": "~2.0",
+        "gushphp/gush": "*"
     }
 }
