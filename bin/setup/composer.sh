@@ -1,6 +1,8 @@
 #!/bin/zsh
 
-cp stub/composer.* ~/.composer/
+REQUIRE=("laravel/envoy=~1" "gushphp/gush=*")
+REQUIREDEV=("pdepend/pdepend=~1" "phpmd/phpmd=~1" "covex-nn/phpcb=~1" "sebastian/phpcpd=~2" "squizlabs/php_codesniffer=~1" "phploc/phploc=~2" "codeception/codeception=~2" "phpdocumentor/phpdocumentor=~2")
+
 cd ~/.composer
-composer install --prefer-dist --dev -vvv
-composer update --prefer-dist --dev -vvv
+composer global require $REQUIRE --prefer-dist -vvv
+composer global require $REQUIREDEV --prefer-dist --dev -vvv
