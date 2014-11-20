@@ -20,6 +20,8 @@ alias cidd="composer install --dev --prefer-dist"
 alias cudd="composer update --dev --prefer-dist"
 alias ciddt="cidd && t"
 alias cuddt="cudd && t"
+alias ciddnl="cidd && rm composer.lock"
+alias cuddnl="cudd && rm composer.lock"
 
 # Git
 alias gvn="git svn"
