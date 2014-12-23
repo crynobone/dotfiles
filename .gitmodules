@@ -10,3 +10,6 @@
 [submodule "git/subsplit"]
 	path = git/subsplit
 	url = https://github.com/dflydev/git-subsplit.git
+[submodule "iterm2/menlo-for-powerline"]
+	path = iterm2/menlo-for-powerline
+	url = https://github.com/abertsch/Menlo-for-Powerline.git
