@@ -36,6 +36,7 @@ alias orchestra="composer create-project orchestra/platform"
 alias artisan="php artisan"
 alias art="php artisan"
 alias serve="php -S 127.0.0.1:8000 -t 'public'"
+alias serve-build="php -S 127.0.0.1:8001 -t 'build'"
 
 # Codeception
 # alias codecept="./vendor/bin/codecept"
