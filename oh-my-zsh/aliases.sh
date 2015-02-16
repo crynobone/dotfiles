@@ -6,6 +6,9 @@ alias env-update="sh ~/.dotfiles/bin/update.sh"
 # Vagrant
 alias vm="ssh vagrant@127.0.0.1 -p 2222"
 alias vaprobash="wget -O Vagrantfile http://bit.ly/vaprobash"
+alias vagrant-cid="vagrant ssh -c 'cd /vagrant && composer install --prefer-dist --dev'"
+alias vagrant-cud="vagrant ssh -c 'cd /vagrant && composer update --prefer-dist --dev'"
+alias vagrant-csu="vagrant ssh -c 'composer self-update'"
 
 # Nginx alias
 alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
