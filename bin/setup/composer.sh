@@ -5,4 +5,4 @@ REQUIREDEV=("pdepend/pdepend=~1" "phpmd/phpmd=~1" "covex-nn/phpcb=~1" "sebastian
 
 cd ~/.composer
 composer global require $REQUIRE --prefer-dist -vvv
-composer global require $REQUIREDEV --prefer-dist --dev -vvv
+composer global require $REQUIREDEV --prefer-dist -vvv

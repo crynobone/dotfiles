@@ -1,5 +1,5 @@
 # Having issue with max open files (when running PHPUnit), increase the limit.
-ulimit -n 2048
+ulimit -n 4096
 
 # Set UTF-8
 export LANG="en_US.UTF-8"
