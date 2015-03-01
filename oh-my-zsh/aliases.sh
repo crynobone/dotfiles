@@ -64,6 +64,7 @@ alias mailcatch="mailcatcher && sudo postfix start"
 alias hipchat-please="sudo /Applications/HipChat.app/Contents/MacOS/HipChat > /dev/null 2>&1"
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias new-slack="open -n /Applications/Slack.app"
+alias csfixer="php-cs-fixer fix"
 
 # Be nice
 alias please="sudo"
