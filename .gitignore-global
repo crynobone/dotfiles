@@ -16,6 +16,9 @@ composer.phar
 # Node 
 node_modules
 
+# PHP-CS-Fixer
+.php_cs.cache
+
 # OS or Editor folders
 .DS_Store
 Thumbs.db
