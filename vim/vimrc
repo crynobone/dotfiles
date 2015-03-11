@@ -1,7 +1,7 @@
 set nocompatible                " Disable vi-compatibility
 filetype off                    " Required
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " Vundle and generic utilities
