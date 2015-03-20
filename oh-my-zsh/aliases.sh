@@ -11,8 +11,8 @@ alias vagrant-cud="vagrant ssh -c 'cd /vagrant && composer update --prefer-dist 
 alias vagrant-csu="vagrant ssh -c 'composer self-update'"
 
 # Nginx alias
-alias nginx-start="sudo launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
-alias nginx-stop="sudo launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
+alias nginx-start="launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
+alias nginx-stop="launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
 alias nginx-restart="nginx-stop && nginx-start"
 alias nginx-create="$DOTFILES/bin/nginx-create.sh"
 alias nginx-remove="$DOTFILES/bin/nginx-remove.sh"
