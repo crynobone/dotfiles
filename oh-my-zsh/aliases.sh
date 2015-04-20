@@ -34,6 +34,7 @@ alias cudnlp="cudp && rm composer.lock"
 
 # Git
 alias gvn="git svn"
+alias gt="git tag"
 alias gfa="git fetch --all"
 alias gsfr="git submodule foreach git reset --hard HEAD"
 alias gsfp="git submodule foreach git pull --rebase"
