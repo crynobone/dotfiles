@@ -8,7 +8,7 @@ alias vm="ssh vagrant@127.0.0.1 -p 2222"
 alias vaprobash="wget -O Vagrantfile http://bit.ly/vaprobash"
 alias vagrant-cid="vagrant ssh -c 'cd /vagrant && composer install --prefer-dist'"
 alias vagrant-cud="vagrant ssh -c 'cd /vagrant && composer update --prefer-dist'"
-alias vagrant-csu="vagrant ssh -c 'composer self-update'"
+alias vagrant-optimize="vagrant ssh -c 'php /vagrant/artisan orchestra:optimize --force'"
 
 # Nginx alias
 alias nginx-start="launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
