@@ -54,10 +54,13 @@ alias serve-build="php -S 127.0.0.1:8001 -t 'build'"
 alias cc="./vendor/bin/codecept"
 alias ct="./vendor/bin/codecept run"
 
+# PHPSpec
+alias prun="$DOTFILES/bin/phpspec-run.sh"
+
 # PHPUnit
 alias t="phpunit"
 alias tc="phpunit --coverage-text"
-alias tch="phpunit --coverage-html"
+alias tch="phpunit --coverage-html=build/coverage"
 alias vc="open ./build/coverage/index.html"
 
 # General
