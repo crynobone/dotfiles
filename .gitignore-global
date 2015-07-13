@@ -20,6 +20,9 @@ composer.phar
 # Node 
 node_modules
 
+# Vagrant
+.vagrant
+
 # OS or Editor folders
 .DS_Store
 Thumbs.db
@@ -29,6 +32,8 @@ Thumbs.db
 .tmproj
 *.esproj
 nbproject
+.phpintel/*
+.idea
 
 # Dreamweaver added files
 _notes
@@ -44,4 +49,3 @@ dwsync.xml
 .CVS
 intermediate
 publish
-.idea
