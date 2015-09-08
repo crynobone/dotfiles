@@ -41,6 +41,8 @@ alias gsfr="git submodule foreach git reset --hard HEAD"
 alias gsfp="git submodule foreach git pull --rebase"
 alias nah="git clean -df; git checkout -- ."
 alias gsee="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glint="git status -s | grep php | awk '{print \$2}' | xargs -n1 php -l 2>/dev/null"
+
 #alias gcontrib="git log --pretty=format:%an > | awk '{ ++c[$0]; } END { for(cc in c) printf "%5d %s\n",c[cc],cc; }' pipe> | sort -r"
 
 # Laravel and Orchestra Platform
