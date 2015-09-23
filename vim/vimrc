@@ -2,7 +2,7 @@ set nocompatible                " Disable vi-compatibility
 filetype off                    " Required
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call vundle#begin()
 
 " Vundle and generic utilities
 Bundle 'gmarik/vundle'
@@ -22,9 +22,10 @@ Bundle 'kchmck/vim-coffee-script'
 " Colorscheme helper
 Bundle 'chriskempson/base16-vim'
 
-set shell=/bin/bash
-
+call vundle#end()
 filetype plugin indent on       " Required
+
+set shell=/bin/bash
 
 " Remove folding of markdown
 " as per https://github.com/plasticboy/vim-markdown
