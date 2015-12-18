@@ -64,9 +64,9 @@ alias ct="./vendor/bin/codecept run"
 alias prun="$DOTFILES/bin/phpspec-run.sh"
 
 # PHPUnit
-alias t="phpunit"
-alias tc="phpunit --coverage-text"
-alias tch="phpunit --coverage-html=build/coverage"
+alias t="$DOTFILES/bin/phpunit-run.sh"
+alias tc="t --coverage-text"
+alias tch="t --coverage-html=build/coverage"
 alias vc="open ./build/coverage/index.html"
 
 # General
