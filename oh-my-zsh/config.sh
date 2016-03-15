@@ -8,6 +8,9 @@ export LC_ALL="en_US.UTF-8"
 # Export editor
 export EDITOR="vim"
 
+# Composer
+export COMPOSER_DISABLE_XDEBUG_WARN=1
+
 # Should always give priority to homebrew.
 PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
