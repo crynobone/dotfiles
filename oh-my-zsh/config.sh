@@ -10,6 +10,7 @@ export EDITOR="vim"
 
 # Composer
 export COMPOSER_DISABLE_XDEBUG_WARN=1
+export COMPOSER_PROCESS_TIMEOUT=20000
 
 # Should always give priority to homebrew.
 PATH=/usr/local/sbin:/usr/local/bin:$PATH
@@ -21,7 +22,7 @@ PATH=$PATH:/usr/local/share/npm/bin
 PATH=$PATH:$HOME/.composer/vendor/bin
 
 # PHP (managed via homebrew)
-PATH=$PATH:$(brew --prefix php56)/bin
+PATH=$PATH:$(brew --prefix php70)/bin
 
 # RVM and Ruby
 PATH=$PATH:$HOME/.rvm/bin:$GEM_HOME/bin
