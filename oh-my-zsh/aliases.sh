@@ -8,9 +8,9 @@ alias vm="ssh vagrant@127.0.0.1 -p 2222"
 alias vaprobash="wget -O Vagrantfile http://bit.ly/vaprobash"
 
 # Nginx alias
-alias nginx-start="launchctl start homebrew.mxcl.nginx && echo 'Nginx started'"
-alias nginx-stop="launchctl stop homebrew.mxcl.nginx && echo 'Nginx stopped'"
-alias nginx-restart="nginx-stop && nginx-start"
+alias nginx-start="brew services start nginx"
+alias nginx-stop="brew services stop nginx"
+alias nginx-restart="brew services restart nginx"
 alias nginx-create="$DOTFILES/bin/nginx-create.sh"
 alias nginx-remove="$DOTFILES/bin/nginx-remove.sh"
 alias nginx-site="vim /usr/local/etc/nginx/sites-available"
