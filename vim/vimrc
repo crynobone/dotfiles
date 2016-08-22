@@ -36,7 +36,7 @@ set t_Co=256
 syntax on
 set background=dark
 colorscheme base16-default      " xoria256 candystripe molokai solarized
-set guifont=menlo\ for\ powerline:h17
+set guifont=Hack
 
 set guioptions-=T               " Removes top toolbar
 set guioptions-=r               " Removes right hand scroll bar

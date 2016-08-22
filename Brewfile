@@ -27,7 +27,7 @@ brew 'youtube-dl'
 
 # Development
 brew 'mariadb'
-brew 'php70', args: ['with-debug', 'with-fpm', 'with-homebrew-curl', 'with-homebrew-openssl', 'with-pgsql', 'with-phpdbg']
+brew 'php70', args: ['disable-debug', 'with-fpm', 'with-homebrew-curl', 'with-homebrew-openssl', 'with-pgsql', 'with-phpdbg']
 brew 'sqlite'
 brew 'php70-xdebug'
 
