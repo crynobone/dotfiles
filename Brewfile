@@ -33,7 +33,6 @@ brew 'php70-xdebug'
 
 # App
 cask 'alfred'
-cask 'dropbox'
 cask 'evernote'
 cask 'google-chrome'
 cask 'iterm2'
