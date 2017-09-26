@@ -1,0 +1,96 @@
+{
+	"auto_complete": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"create_window_at_startup": false,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		".php_cs.cache"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".subsplit",
+		".idea",
+		".phpintel",
+		".vagrant",
+		"_node_modules*"
+	],
+	"font_face": "Fira Code",
+	"font_size": 14,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"ActionScript",
+		"ASP",
+		"Clojure",
+		"Erlang",
+		"Groovy",
+		"Haskell",
+		"Lua",
+		"Markdown",
+		"Pascal",
+		"Scala"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		".subsplit/*",
+		"_node_modules*/"
+	],
+	"line_padding_bottom": 19,
+	"line_padding_top": 19,
+	"material_theme_small_tab": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+	],
+	"tab_completion": false,
+	"theme": "Material-Theme.sublime-theme",
+	"todo":
+	{
+		"case_sensitive": true,
+		"patterns":
+		{
+			"CHANGED": "CHANGED[\\s]*?:+(?P<changed>\\S.*)$",
+			"FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>\\S.*)$",
+			"NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
+			"TODO": "TODO[\\s]*?:+(?P<todo>.*)$"
+		}
+	},
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"word_wrap": true,
+	"wrap_width": 160
+}
