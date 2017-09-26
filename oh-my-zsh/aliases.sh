@@ -57,10 +57,10 @@ alias cc="./vendor/bin/codecept"
 alias ct="./vendor/bin/codecept run"
 
 # PHPSpec
-alias prun="$DOTFILES/bin/phpspec-run.sh"
+alias prun="$DOTFILES/bin/run-phpspec.sh"
 
 # PHPUnit
-alias t="$DOTFILES/bin/phpunit-run.sh"
+alias t="$DOTFILES/bin/run-phpunit.sh"
 alias tc="t --coverage-text"
 alias tch="t --coverage-html=build/coverage"
 alias vc="open ./build/coverage/index.html"
@@ -68,8 +68,8 @@ alias vc="open ./build/coverage/index.html"
 # General
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias csfixer="php-cs-fixer fix"
-alias csfixer-test="php-cs-fixer fix tests/ --level=psr2 --fixers=-psr0,align_double_arrow,concat_without_spaces,double_arrow_multiline_whitespaces,duplicate_semicolon,empty_return,extra_empty_lines,include,join_function,multiline_array_trailing_comma,new_with_braces,no_blank_lines_after_class_opening,no_empty_lines_after_phpdocs,object_operator,operators_spaces,phpdoc_indent,phpdoc_separation,phpdoc_short_description,phpdoc_to_comment,phpdoc_trim,phpdoc_type_to_var,phpdoc_var_without_name,single_array_no_trailing_comma,remove_leading_slash_use,remove_lines_between_uses,short_array_syntax,spaces_cast,standardize_not_equal,unalign_double_arrow,unalign_equals,unused_use,whitespacy_lines,visibility"
+alias csfixer="$DOTFILES/bin/run-php-cs-fixer.sh fix"
+alias csfixer-test="php-cs-fixer tests/ --level=psr2 --fixers=-psr0,align_double_arrow,concat_without_spaces,double_arrow_multiline_whitespaces,duplicate_semicolon,empty_return,extra_empty_lines,include,join_function,multiline_array_trailing_comma,new_with_braces,no_blank_lines_after_class_opening,no_empty_lines_after_phpdocs,object_operator,operators_spaces,phpdoc_indent,phpdoc_separation,phpdoc_short_description,phpdoc_to_comment,phpdoc_trim,phpdoc_type_to_var,phpdoc_var_without_name,single_array_no_trailing_comma,remove_leading_slash_use,remove_lines_between_uses,short_array_syntax,spaces_cast,standardize_not_equal,unalign_double_arrow,unalign_equals,unused_use,whitespacy_lines,visibility"
 alias eject="/usr/bin/drutil eject"
 
 # Be nice
