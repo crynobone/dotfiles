@@ -22,7 +22,7 @@ PATH=$PATH:/usr/local/share/npm/bin
 PATH=$PATH:$HOME/.composer/vendor/bin
 
 # PHP (managed via homebrew)
-PATH=$PATH:$(brew --prefix php70)/bin
+PATH=$PATH:$(brew --prefix php@7.2)/bin
 
 # RVM and Ruby
 PATH=$PATH:$HOME/.rvm/bin:$GEM_HOME/bin
