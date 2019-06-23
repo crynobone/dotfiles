@@ -2,7 +2,6 @@
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
-tap 'homebrew/php'
 
 # Make sure apps get installed in system Applications dir
 cask_args appdir: '/Applications'
@@ -27,9 +26,8 @@ brew 'youtube-dl'
 
 # Development
 brew 'mariadb'
-brew 'php70', args: ['disable-debug', 'with-fpm', 'with-homebrew-curl', 'with-homebrew-openssl', 'with-pgsql', 'with-phpdbg']
+brew 'php', args: ['disable-debug', 'with-fpm', 'with-homebrew-curl', 'with-homebrew-openssl', 'with-pgsql', 'with-phpdbg']
 brew 'sqlite'
-brew 'php70-xdebug'
 
 # App
 cask 'alfred'
@@ -47,7 +45,7 @@ cask 'virtualbox-extension-pack'
 cask 'vlc'
 
 # Fonts
-cask 'font-sauce-code-powerline'
+cask 'font-saurce-code-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
