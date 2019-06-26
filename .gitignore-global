@@ -13,6 +13,7 @@
 # Composer & PHP
 composer.phar
 .php_cs.cache
+.phpunit.result.cache
 
 # Git Subsplit
 .subsplit/
