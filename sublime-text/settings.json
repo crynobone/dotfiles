@@ -26,7 +26,8 @@
 		"*.psd",
 		"*.db",
 		"*.sublime-workspace",
-		".php_cs.cache"
+		".php_cs.cache",
+		".phpunit.result.cache"
 	],
 	"folder_exclude_patterns":
 	[

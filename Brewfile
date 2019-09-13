@@ -16,16 +16,17 @@ brew 'findutils'
 brew 'git'
 brew 'gnu-sed'
 brew 'libevent'
-brew 'node'
+brew 'libev'
 brew 'openssl'
-brew 'wget'
+brew 'curl'
 
 # Utilities
 brew 'httpie'
 brew 'youtube-dl'
+brew 'wget'
+brew 'telsocket'
 
 # Development
-brew 'mariadb'
 brew 'php', args: ['disable-debug', 'with-fpm', 'with-homebrew-curl', 'with-homebrew-openssl', 'with-pgsql', 'with-phpdbg']
 brew 'sqlite'
 
@@ -34,7 +35,6 @@ cask 'alfred'
 cask 'evernote'
 cask 'google-chrome'
 cask 'iterm2'
-cask 'mysqlworkbench'
 cask 'sequel-pro'
 cask 'skype'
 cask 'slack'
