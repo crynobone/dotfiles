@@ -41,8 +41,8 @@
 		".vagrant",
 		"_node_modules*"
 	],
-	"font_face": "Fira Code",
-	"font_size": 14,
+	"font_face": "Operator Mono",
+	"font_size": 16,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -68,8 +68,8 @@
 		".subsplit/*",
 		"_node_modules*/"
 	],
-	"line_padding_bottom": 19,
-	"line_padding_top": 19,
+	"line_padding_bottom": 12,
+	"line_padding_top": 12,
 	"material_theme_small_tab": true,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
@@ -77,7 +77,7 @@
 	[
 	],
 	"tab_completion": false,
-	"theme": "Material-Theme.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"todo":
 	{
 		"case_sensitive": true,
