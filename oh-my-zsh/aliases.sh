@@ -16,8 +16,10 @@ alias nginx-remove="$DOTFILES/bin/nginx-remove.sh"
 alias nginx-site="vim /usr/local/etc/nginx/sites-available"
 
 # Composer
-alias cid="composer install --prefer-dist"
-alias cud="composer update --prefer-dist"
+alias cul="COMPOSER_MEMORY_LIMIT=-1"
+alias cr="COMPOSER_MEMORY_LIMIT=-1 composer require"
+alias cid="COMPOSER_MEMORY_LIMIT=-1 composer install --prefer-dist"
+alias cud="COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-dist"
 alias cidp="cid -vvv --profile"
 alias cudp="cud -vvv --profile"
 alias cidt="cid && t"

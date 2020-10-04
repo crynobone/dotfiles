@@ -4,8 +4,8 @@
 DIR=`pwd`
 
 if [ -f $DIR/vendor/bin/php-cs-fixer ]; then
-    php vendor/bin/php-cs-fixer "$@"
+    php -d memory_limit=512M vendor/bin/php-cs-fixer "$@"
 else
-    php-cs-fixer "$@"
+    php -d memory_limit=512M ~/.composer/vendor/bin/php-cs-fixer "$@"
 fi
 
