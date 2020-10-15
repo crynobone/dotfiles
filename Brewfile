@@ -27,7 +27,6 @@ brew 'wget'
 brew 'telsocket'
 
 # Development
-brew 'php', args: ['disable-debug', 'with-fpm', 'with-homebrew-curl', 'with-homebrew-openssl', 'with-pgsql', 'with-phpdbg']
 brew 'sqlite'
 
 # App

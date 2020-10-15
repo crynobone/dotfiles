@@ -1,21 +1,17 @@
-function eject {
-    /usr/bin/drutil eject;
+function composer-link() {
+    composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
 }
 
-function orchestral {
-    PROJECT=$1
-    cd ~/Sites
-    orchestra $PROJECT 3.3.x --prefer-dist -vvv --profile -s dev
+function takeout-mysql() {
+    mysql -uroot -p -h127.0.0.1
+}
 
-    if [ -d ~/Sites/$PROJECT ]; then
-        cd $PROJECT
-        git init
-        git add .
-        git commit -sam "Initial Commit."
-        git remote add orchestra git@github.com:orchestral/platform.git
-        git config remote.orchestra.tagopt --no-tags
-        git remote set-url --push orchestra no_push
-        git fetch orchestra
-    fi
+function takeout-mysql-create-db() {
+    mysql -uroot -p -h127.0.0.1 -e "create database $1;"
+}
+
+
+function takeout-mysql-drop-db() {
+    mysql -uroot -p -h127.0.0.1 -e "drop database $1;"
 }
 
