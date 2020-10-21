@@ -21,7 +21,8 @@ function takeout-mysql-drop-db() {
     mysql -uroot -p -h127.0.0.1 -e "drop database $1;"
 }
 
-function new-nova-issue() {
+function create-nova-issue() {
+    cd ~/Projects/laravel/nova/issues
     laravel new issue-$1
     cd issue-$1
     composer config repositories.local '{"type": "composer", "url": "https://nova.laravel.com"}' --file composer.json
@@ -34,5 +35,16 @@ function new-nova-issue() {
     git init .
     git add .
     git commit -sam "First"
+    valet link
+    echo "You can browse the app from <http://issue-$1.test/nova>"
 }
+
+function drop-nova-issue() {
+    cd ~/Projects/laravel/nova/issues/issue-$1
+    valet unlink
+    takeout-mysql-drop-db issue_$1
+    cd ..
+    rm -rf issue-$1
+}
+
 
