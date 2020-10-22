@@ -10,15 +10,20 @@ function composer-sync() {
 }
 
 function takeout-mysql() {
-    mysql -uroot -p -h127.0.0.1
+    mysql --user=root --password= --host=127.0.0.1
 }
 
 function takeout-mysql-create-db() {
-    mysql -uroot -p -h127.0.0.1 -e "create database $1;"
+    mysql --user=root --password= --host=127.0.0.1 -e "create database $1;"
 }
 
 function takeout-mysql-drop-db() {
-    mysql -uroot -p -h127.0.0.1 -e "drop database $1;"
+    mysql --user=root --password= --host=127.0.0.1 -e "drop database $1;"
+}
+
+function list-nova-issue() {
+    cd ~/Projects/laravel/nova/issues
+    find . -maxdepth 1 -type d
 }
 
 function create-nova-issue() {
@@ -46,5 +51,3 @@ function drop-nova-issue() {
     cd ..
     rm -rf issue-$1
 }
-
-
