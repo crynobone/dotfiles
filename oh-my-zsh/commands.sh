@@ -44,6 +44,20 @@ function create-nova-issue() {
     echo "You can browse the app from <http://issue-$1.test/nova>"
 }
 
+function github-nova-issue() {
+    cd ~/Projects/laravel/nova/issues
+    git clone git@github.com:nova-issues/issue-$1.git
+    cd issue-$1
+    composer install
+    composer run post-root-package-install
+    composer run post-create-project-cmd
+    takeout-mysql-create-db issue_$1
+    php artisan migrate
+    php artisan nova:user
+    valet link
+    echo "You can browse the app from <http://issue-$1.test/nova>"
+}
+
 function drop-nova-issue() {
     cd ~/Projects/laravel/nova/issues/issue-$1
     valet unlink

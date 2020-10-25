@@ -3,18 +3,6 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias env-update="sh $DOTFILES/bin/update.sh"
 
-# Vagrant
-alias vm="ssh vagrant@127.0.0.1 -p 2222"
-alias vaprobash="wget -O Vagrantfile http://bit.ly/vaprobash"
-
-# Nginx alias
-alias nginx-start="brew services start nginx"
-alias nginx-stop="brew services stop nginx"
-alias nginx-restart="brew services restart nginx"
-alias nginx-create="$DOTFILES/bin/nginx-create.sh"
-alias nginx-remove="$DOTFILES/bin/nginx-remove.sh"
-alias nginx-site="vim /usr/local/etc/nginx/sites-available"
-
 # Composer
 alias cul="COMPOSER_MEMORY_LIMIT=-1"
 alias cr="COMPOSER_MEMORY_LIMIT=-1 composer require"
@@ -63,9 +51,7 @@ alias prun="$DOTFILES/bin/run-phpspec.sh"
 
 # PHPUnit
 alias t="$DOTFILES/bin/run-phpunit.sh"
-alias tc="t --coverage-text"
-alias tch="t --coverage-html=build/coverage"
-alias vc="open ./build/coverage/index.html"
+alias dusk="t -c phpunit.dusk.xml"
 
 # General
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"
