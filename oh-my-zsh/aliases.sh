@@ -52,6 +52,7 @@ alias prun="$DOTFILES/bin/run-phpspec.sh"
 # PHPUnit
 alias t="$DOTFILES/bin/run-phpunit.sh"
 alias dusk="t -c phpunit.dusk.xml"
+alias dusk-headless="CI=true dusk"
 
 # General
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"

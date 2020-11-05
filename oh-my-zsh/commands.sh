@@ -2,9 +2,15 @@ function composer-link() {
     composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
 }
 
+function composer-tag() {
+    composer config version "$1"
+    git commit -sam "Prepare release v$1"
+    git tag v$1
+}
+
 function composer-sync() {
     git remote add $1 $2
-    git remote.$1.tagopt --no-tags
+    git config remote.$1.tagopt --no-tags
     git remote set-url --push $1 no_push
     git fetch $1
 }
