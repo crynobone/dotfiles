@@ -36,6 +36,7 @@ function create-nova-issue() {
     cd ~/Projects/laravel/nova/issues
     laravel new issue-$1
     cd issue-$1
+    php artisan tinker --execute="file_put_contents('.env', str_replace(['DB_HOST=mysql'], ['DB_HOST=127.0.0.1'], file_get_contents('.env')));"
     composer config repositories.local '{"type": "composer", "url": "https://nova.laravel.com"}' --file composer.json
     composer require "laravel/nova:*"
     php artisan nova:install
