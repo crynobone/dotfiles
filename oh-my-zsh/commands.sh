@@ -1,3 +1,13 @@
+DIR=`pwd`
+
+function art() {
+    if [ -f $DIR/artisan ]; then
+        php artisan "$@"
+    else
+        php vendor/bin/testbench "$@"
+    fi
+}
+
 function composer-link() {
     composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
 }
