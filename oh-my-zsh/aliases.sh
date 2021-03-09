@@ -36,7 +36,7 @@ alias glarge="sh $DOTFILES/bin/glarge.sh"
 # Laravel and Orchestra Platform
 alias craft="composer create-project laravel/laravel"
 alias orchestra="composer create-project orchestra/platform"
-alias artisan="$DOTFILES/bin/run-artisan.sh"
+alias art="$DOTFILES/bin/run-artisan.sh"
 alias serve="php -S 127.0.0.1:8000 -t 'public'"
 alias serve-build="php -S 127.0.0.1:8001 -t 'build'"
 

@@ -1,6 +1,6 @@
 DIR=`pwd`
 
-function art() {
+function artisan() {
     if [ -f $DIR/artisan ]; then
         php artisan "$@"
     else
@@ -49,6 +49,7 @@ function create-nova-issue() {
     echo 'Update environment file'
     php artisan tinker --execute="file_put_contents('.env', str_replace(['DB_HOST=mysql'], ['DB_HOST=127.0.0.1'], file_get_contents('.env')));"
     composer config repositories.local '{"type": "composer", "url": "https://nova.laravel.com"}' --file composer.json
+    composer require --dev "spatie/laravel-ray"
     composer require "laravel/nova:*"
     php artisan nova:install
     takeout-mysql-create-db issue_$1
@@ -82,4 +83,8 @@ function drop-nova-issue() {
     takeout-mysql-drop-db issue_$1
     cd ..
     rm -rf issue-$1
+}
+
+function wip() {
+    git commit -sm "wip"
 }
