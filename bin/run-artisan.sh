@@ -1,11 +1,10 @@
 #!/bin/zsh
 
 # Get target project path
-DIR=`pwd`
 
-if [ -f $DIR/artisan ]; then
+if [ -f ./artisan ]; then
     php artisan "$@"
 else
-    php vendor/bin/testbench "$@"
+    composer exec testbench "$@"
 fi
 

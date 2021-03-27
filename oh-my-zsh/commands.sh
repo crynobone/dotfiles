@@ -1,10 +1,8 @@
-DIR=`pwd`
-
 function artisan() {
-    if [ -f $DIR/artisan ]; then
+    if [ -f ./artisan ]; then
         php artisan "$@"
     else
-        php vendor/bin/testbench "$@"
+        composer exec testbench "$@"
     fi
 }
 
@@ -83,6 +81,29 @@ function drop-nova-issue() {
     takeout-mysql-drop-db issue_$1
     cd ..
     rm -rf issue-$1
+}
+
+function mix-nova-prepare()
+{
+    if [ ! -f ./vendor/laravel/nova/webpack.mix.js ]; then
+        ./vendor/laravel/nova/webpack.mix.js.dist ./vendor/laravel/nova/webpack.mix.js
+        php artisan tinker --execute="file_put_contents(base_path('vendor/laravel/nova/webpack.mix.js'), str_replace('../nova-app/public', '../../../public', file_get_contents(base_path('vendor/laravel/nova/webpack.mix.js'))))"
+    fi
+
+    yarn  --cwd "./vendor/laravel/nova" install
+}
+
+function mix-nova-watch()
+{
+    mix-nova-prepare
+    yarn  --cwd "./vendor/laravel/nova" run watch
+}
+
+
+function mix-nova-dev()
+{
+    mix-nova-prepare
+    yarn  --cwd "./vendor/laravel/nova" run dev
 }
 
 function wip() {
