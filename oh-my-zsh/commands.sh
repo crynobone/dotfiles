@@ -2,7 +2,7 @@ function artisan() {
     if [ -f ./artisan ]; then
         php artisan "$@"
     else
-        composer exec testbench "$@"
+        php vendor/bin/testbench "$@"
     fi
 }
 
@@ -48,7 +48,7 @@ function create-nova-issue() {
     php artisan tinker --execute="file_put_contents('.env', str_replace(['DB_HOST=mysql'], ['DB_HOST=127.0.0.1'], file_get_contents('.env')));"
     composer config repositories.local '{"type": "composer", "url": "https://nova.laravel.com"}' --file composer.json
     composer require --dev "spatie/laravel-ray"
-    composer require "laravel/nova:*"
+    composer require "nova-kit/helpers:*" "laravel/nova:*"
     php artisan nova:install
     takeout-mysql-create-db issue_$1
     php artisan migrate
@@ -86,7 +86,7 @@ function drop-nova-issue() {
 function mix-nova-prepare()
 {
     if [ ! -f ./vendor/laravel/nova/webpack.mix.js ]; then
-        ./vendor/laravel/nova/webpack.mix.js.dist ./vendor/laravel/nova/webpack.mix.js
+        cp ./vendor/laravel/nova/webpack.mix.js.dist ./vendor/laravel/nova/webpack.mix.js
         php artisan tinker --execute="file_put_contents(base_path('vendor/laravel/nova/webpack.mix.js'), str_replace('../nova-app/public', '../../../public', file_get_contents(base_path('vendor/laravel/nova/webpack.mix.js'))))"
     fi
 

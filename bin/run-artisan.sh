@@ -5,6 +5,6 @@
 if [ -f ./artisan ]; then
     php artisan "$@"
 else
-    composer exec testbench "$@"
+    php vendor/bin/testbench "$@"
 fi
 
