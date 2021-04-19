@@ -41,12 +41,11 @@ function list-nova-issue() {
 }
 
 function create-nova-issue() {
-    cd ~/Projects/laravel/nova/issues
-    laravel new issue-$1
-    cd issue-$1
     # Require "https://github.com/nova-kit/setup-nova"
+    cd ~/Projects/laravel/nova/issues
+    setup-nova new issue-$1
+    cd issue-$1
     takeout-mysql-create-db issue_$1
-    setup-nova install
     rm README.md
     git init .
     git add .
