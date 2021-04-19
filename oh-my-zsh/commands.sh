@@ -44,15 +44,9 @@ function create-nova-issue() {
     cd ~/Projects/laravel/nova/issues
     laravel new issue-$1
     cd issue-$1
-    echo 'Update environment file'
-    php artisan tinker --execute="file_put_contents('.env', str_replace(['DB_HOST=mysql'], ['DB_HOST=127.0.0.1'], file_get_contents('.env')));"
-    composer config repositories.local '{"type": "composer", "url": "https://nova.laravel.com"}' --file composer.json
-    composer require --dev "spatie/laravel-ray"
-    composer require "nova-kit/helpers:*" "laravel/nova:*"
-    php artisan nova:install
+    # Require "https://github.com/nova-kit/setup-nova"
     takeout-mysql-create-db issue_$1
-    php artisan migrate
-    php artisan nova:user
+    setup-nova install
     rm README.md
     git init .
     git add .
