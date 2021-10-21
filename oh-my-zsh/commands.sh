@@ -43,9 +43,8 @@ function list-nova-issue() {
 function create-nova-issue() {
     # Require "https://github.com/nova-kit/setup-nova"
     cd ~/Projects/laravel/nova/issues
-    setup-nova new issue-$1
+    laravel-nova new $1 --issue --install-optional --with-sample-data
     cd issue-$1
-    takeout-mysql-create-db issue_$1
     rm README.md
     git init .
     git add .
@@ -84,6 +83,19 @@ function mix-nova-prepare()
     fi
 
     yarn  --cwd "./vendor/laravel/nova" install
+}
+
+function build-nova-suite()
+{
+    composer update
+    rm ./webpack.mix.js
+    cp ./webpack.mix.js.dist ./webpack.mix.js
+    php -r "file_put_contents('./webpack.mix.js', str_replace('../nova-app/public', 'vendor/laravel/nova-dusk-suite/public', file_get_contents('./webpack.mix.js')));"
+    php -r "file_put_contents('./webpack.mix.js', str_replace('.sourceMaps()', '//.sourceMaps()', file_get_contents('./webpack.mix.js')));"
+    composer run dusk:prepare
+    composer run dusk:assets
+    artisan package:discover
+    artisan nova:publish --force
 }
 
 function mix-nova-watch()
