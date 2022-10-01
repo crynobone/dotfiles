@@ -48,7 +48,7 @@ function create-nova-issue() {
     rm README.md
     git init .
     git add .
-    git commit -sam "First"
+    git commit -sam "Nova installed!"
     valet link
     echo "You can browse the app from <http://issue-$1.test/nova>"
 }
@@ -61,8 +61,7 @@ function github-nova-issue() {
     composer run post-root-package-install
     composer run post-create-project-cmd
     takeout-mysql-create-db issue_$1
-    php artisan migrate
-    php artisan nova:user
+    php artisan migrate --seed
     valet link
     echo "You can browse the app from <http://issue-$1.test/nova>"
 }
@@ -82,7 +81,34 @@ function mix-nova-prepare()
         php artisan tinker --execute="file_put_contents(base_path('vendor/laravel/nova/webpack.mix.js'), str_replace('../nova-app/public', '../../../public', file_get_contents(base_path('vendor/laravel/nova/webpack.mix.js'))))"
     fi
 
-    yarn  --cwd "./vendor/laravel/nova" install
+    if [ -f ./vendor/laravel/nova/yarn.lock ]; then
+        yarn --cwd "./vendor/laravel/nova" install
+    else
+        npm --prefix="./vendor/laravel/nova" ci
+    fi
+}
+
+function mix-nova-watch()
+{
+    mix-nova-prepare
+
+    if [ -f ./vendor/laravel/nova/yarn.lock ]; then
+        yarn --cwd "./vendor/laravel/nova" run watch
+    else
+        npm --prefix="./vendor/laravel/nova" run watch
+    fi
+}
+
+
+function mix-nova-dev()
+{
+    mix-nova-prepare
+
+    if [ -f ./vendor/laravel/nova/yarn.lock ]; then
+        yarn --cwd "./vendor/laravel/nova" run dev
+    else
+        npm --prefix="./vendor/laravel/nova" run dev
+    fi
 }
 
 function build-nova-suite()
@@ -96,19 +122,6 @@ function build-nova-suite()
     composer run dusk:assets
     artisan package:discover
     artisan nova:publish --force
-}
-
-function mix-nova-watch()
-{
-    mix-nova-prepare
-    yarn  --cwd "./vendor/laravel/nova" run watch
-}
-
-
-function mix-nova-dev()
-{
-    mix-nova-prepare
-    yarn  --cwd "./vendor/laravel/nova" run dev
 }
 
 function wip() {
