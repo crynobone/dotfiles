@@ -41,7 +41,7 @@ function list-nova-issue() {
 }
 
 function create-nova-issue() {
-    # Require "https://github.com/nova-kit/setup-nova"
+    # Require "https://github.com/nova-kit/nova-installer"
     cd ~/Projects/laravel/nova/issues
     laravel-nova new $1 --issue --install-optional --with-sample-data
     cd issue-$1
