@@ -118,6 +118,7 @@ function build-nova-suite()
     cp ./webpack.mix.js.dist ./webpack.mix.js
     php -r "file_put_contents('./webpack.mix.js', str_replace('../nova-app/public', 'vendor/laravel/nova-dusk-suite/public', file_get_contents('./webpack.mix.js')));"
     php -r "file_put_contents('./webpack.mix.js', str_replace('.sourceMaps()', '//.sourceMaps()', file_get_contents('./webpack.mix.js')));"
+    npm ci
     composer run dusk:prepare
     composer run dusk:assets
     artisan package:discover
