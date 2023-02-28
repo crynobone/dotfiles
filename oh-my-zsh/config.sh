@@ -13,7 +13,7 @@ export COMPOSER_DISABLE_XDEBUG_WARN=1
 export COMPOSER_PROCESS_TIMEOUT=20000
 
 # Should always give priority to homebrew.
-PATH=/usr/local/sbin:/usr/local/bin:$PATH
+PATH=/usr/local/sbin:/usr/local/bin:/opt/homebrew/bin:$PATH
 
 # NPM
 PATH=$PATH:/usr/local/share/npm/bin
