@@ -37,10 +37,6 @@ cask 'iterm2'
 cask 'sequel-pro'
 cask 'skype'
 cask 'slack'
-cask 'sublime-text3'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
 cask 'vlc'
 
 # Fonts
