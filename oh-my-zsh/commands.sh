@@ -113,6 +113,17 @@ function mix-nova-dev()
 
 function build-nova-suite()
 {
+    nodeversion=$(node --version)
+    php --version
+    echo "node $nodeversion"
+
+    if [ -f ./ui/package.json ]; then
+        cd ui/
+        npm ci
+        npm run build
+        cd ..
+    fi
+
     composer update
     rm ./webpack.mix.js
     cp ./webpack.mix.js.dist ./webpack.mix.js
