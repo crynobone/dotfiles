@@ -21,9 +21,6 @@ PATH=$PATH:/usr/local/share/npm/bin
 # Composer
 PATH=$PATH:$HOME/.composer/vendor/bin:./vendor/bin
 
-# PHP (managed via homebrew)
-PATH=$PATH:$(brew --prefix php@7.4)/bin
-
 # RVM and Ruby
-PATH=$PATH:$HOME/.rvm/bin:$GEM_HOME/bin
+# PATH=$PATH:$HOME/.rvm/bin:$GEM_HOME/bin
 
