@@ -117,12 +117,12 @@ function build-nova-suite()
     php --version
     echo "node $nodeversion"
 
-    if [ -f ./ui/package.json ]; then
-        cd ui/
-        npm ci
-        npm run build
-        cd ..
-    fi
+    # if [ -f ./ui/package.json ]; then
+    #     cd ui/
+    #     npm ci
+    #     npm run build
+    #     cd ..
+    # fi
 
     composer update
     rm ./webpack.mix.js
